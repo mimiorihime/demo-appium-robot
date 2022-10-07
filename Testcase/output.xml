@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221006 17:37:00.054" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase" source="C:\Users\Neversitup\Desktop\robot\Testcase">
+<suite id="s1-s1" name="Case01 Login" source="C:\Users\Neversitup\Desktop\robot\Testcase\Case01_Login.robot">
+<test id="s1-s1-t1" name="Customer Login" line="11">
+<kw name="Open App" library="WalletMee">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appium:app=${app}</arg>
+<arg>appium:deviceName=${appium:deviceName}</arg>
+<arg>appium:automationName=${appium:automationName}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20221006 17:37:00.346" endtime="20221006 17:37:07.070"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:00.345" endtime="20221006 17:37:07.070"/>
+</kw>
+<kw name="Login gmail" library="WalletMee">
+<kw name="Sign in with Google" library="login">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/signInButton</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:07.071" endtime="20221006 17:37:09.514"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/signInButton</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:09.516" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/signInButton'.</msg>
+<status status="PASS" starttime="20221006 17:37:09.515" endtime="20221006 17:37:09.598"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.gms:id/account_display_name</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:09.598" endtime="20221006 17:37:10.831"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.gms:id/account_display_name</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:10.832" level="INFO">Clicking element 'id=com.google.android.gms:id/account_display_name'.</msg>
+<status status="PASS" starttime="20221006 17:37:10.831" endtime="20221006 17:37:10.923"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:07.071" endtime="20221006 17:37:10.923"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:07.071" endtime="20221006 17:37:10.923"/>
+</kw>
+<kw name="Accept condition" library="WalletMee">
+<kw name="Accept" library="Permission">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnTermAccept</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:10.924" endtime="20221006 17:37:15.562"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnTermAccept</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:15.564" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/btnTermAccept'.</msg>
+<status status="PASS" starttime="20221006 17:37:15.562" endtime="20221006 17:37:15.640"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:10.924" endtime="20221006 17:37:15.640"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:10.924" endtime="20221006 17:37:15.640"/>
+</kw>
+<kw name="allow permission" library="Permission">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/cb</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:15.641" endtime="20221006 17:37:16.951"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnPolicyAccept</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:16.951" endtime="20221006 17:37:17.209"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/cb</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:17.210" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/cb'.</msg>
+<status status="PASS" starttime="20221006 17:37:17.209" endtime="20221006 17:37:17.501"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnPolicyAccept</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:17.503" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/btnPolicyAccept'.</msg>
+<status status="PASS" starttime="20221006 17:37:17.501" endtime="20221006 17:37:18.391"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.android.permissioncontroller:id/permission_allow_button</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:18.391" endtime="20221006 17:37:19.214"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.permissioncontroller:id/permission_allow_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:19.215" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20221006 17:37:19.214" endtime="20221006 17:37:19.301"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:15.640" endtime="20221006 17:37:19.301"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:00.345" endtime="20221006 17:37:19.301"/>
+</test>
+<test id="s1-s1-t2" name="Create Wallet" line="16">
+<kw name="Into main page" library="WalletMee">
+<kw name="main page" library="Permission">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvAds</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:19.304" endtime="20221006 17:37:20.422"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvAds</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:20.423" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/imvAds'.</msg>
+<status status="PASS" starttime="20221006 17:37:20.422" endtime="20221006 17:37:20.496"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:19.304" endtime="20221006 17:37:20.496"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:19.303" endtime="20221006 17:37:20.496"/>
+</kw>
+<kw name="Create Mee Wallet" library="WalletMee">
+<kw name="Add Mee Wallet" library="Action">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layoutWalletIndicator</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:20.497" endtime="20221006 17:37:21.085"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layoutWalletIndicator</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:21.086" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/layoutWalletIndicator'.</msg>
+<status status="PASS" starttime="20221006 17:37:21.085" endtime="20221006 17:37:22.330"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/dashboard_add_card</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:22.330" endtime="20221006 17:37:22.410"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/dashboard_add_card</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:22.411" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/dashboard_add_card'.</msg>
+<status status="PASS" starttime="20221006 17:37:22.410" endtime="20221006 17:37:22.512"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtWalletName</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:22.513" endtime="20221006 17:37:23.206"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtWalletName</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:23.208" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/edtWalletName'.</msg>
+<status status="PASS" starttime="20221006 17:37:23.207" endtime="20221006 17:37:24.022"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtWalletName</arg>
+<arg>Mee</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:24.023" level="INFO">Typing text 'Mee' into text field 'id=com.neversitup.piggipogo:id/edtWalletName'</msg>
+<status status="PASS" starttime="20221006 17:37:24.022" endtime="20221006 17:37:24.135"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvDone</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:24.135" endtime="20221006 17:37:24.787"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvDone</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:24.788" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/imvDone'.</msg>
+<status status="PASS" starttime="20221006 17:37:24.787" endtime="20221006 17:37:24.871"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvWalletName</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:24.871" endtime="20221006 17:37:25.879"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvWalletName</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:25.880" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/tvWalletName'.</msg>
+<status status="PASS" starttime="20221006 17:37:25.879" endtime="20221006 17:37:25.976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvAmountRemain</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:25.976" endtime="20221006 17:37:26.618"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:20.496" endtime="20221006 17:37:26.618"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:20.496" endtime="20221006 17:37:26.618"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:19.303" endtime="20221006 17:37:26.618"/>
+</test>
+<test id="s1-s1-t3" name="Into Mee Wallet" line="19">
+<kw name="ผู้ใช้งานอยู่หน้า Mee Wallet" library="WalletMee">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imv_close_page</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:26.620" endtime="20221006 17:37:26.698"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvDone</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:26.698" endtime="20221006 17:37:26.768"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:26.620" endtime="20221006 17:37:26.768"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:26.619" endtime="20221006 17:37:26.769"/>
+</test>
+<status status="PASS" starttime="20221006 17:37:00.085" endtime="20221006 17:37:26.770"/>
+</suite>
+<suite id="s1-s2" name="Case02 Income" source="C:\Users\Neversitup\Desktop\robot\Testcase\Case02_Income.robot">
+<test id="s1-s2-t1" name="ผู้ใช้งานสร้าง Income" line="11">
+<kw name="Add Salary" library="WalletMee">
+<kw name="Add Income" library="Action">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvAdd</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:26.791" endtime="20221006 17:37:26.869"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvAdd</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:26.870" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/imvAdd'.</msg>
+<status status="PASS" starttime="20221006 17:37:26.869" endtime="20221006 17:37:26.967"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layout</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:26.967" endtime="20221006 17:37:27.521"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layoutIncome</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:27.522" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/layoutIncome'.</msg>
+<status status="PASS" starttime="20221006 17:37:27.521" endtime="20221006 17:37:27.590"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/txtCategory</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:27.590" endtime="20221006 17:37:28.997"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:26.791" endtime="20221006 17:37:28.997"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/key_four</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:28.998" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/key_four'.</msg>
+<status status="PASS" starttime="20221006 17:37:28.997" endtime="20221006 17:37:29.123"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:29.123" endtime="20221006 17:37:29.844"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/key_two</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:29.845" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/key_two'.</msg>
+<status status="PASS" starttime="20221006 17:37:29.844" endtime="20221006 17:37:29.972"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:29.972" endtime="20221006 17:37:30.590"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/key_five</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:30.592" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/key_five'.</msg>
+<status status="PASS" starttime="20221006 17:37:30.590" endtime="20221006 17:37:30.717"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:30.717" endtime="20221006 17:37:31.401"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/key_zero</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:31.403" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/key_zero'.</msg>
+<status status="PASS" starttime="20221006 17:37:31.401" endtime="20221006 17:37:31.513"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:31.513" endtime="20221006 17:37:32.289"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/key_zero</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:32.290" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/key_zero'.</msg>
+<status status="PASS" starttime="20221006 17:37:32.289" endtime="20221006 17:37:32.418"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:32.418" endtime="20221006 17:37:33.110"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/close_keyboard</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:33.111" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/close_keyboard'.</msg>
+<status status="PASS" starttime="20221006 17:37:33.110" endtime="20221006 17:37:33.239"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:33.239" endtime="20221006 17:37:34.200"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/txtCategory</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:34.202" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/txtCategory'.</msg>
+<status status="PASS" starttime="20221006 17:37:34.201" endtime="20221006 17:37:34.294"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/listCategory</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:34.294" endtime="20221006 17:37:35.297"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:35.298" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView'.</msg>
+<status status="PASS" starttime="20221006 17:37:35.297" endtime="20221006 17:37:35.539"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layoutSubCategory</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:35.540" endtime="20221006 17:37:36.457"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.LinearLayout[3]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.FrameLayout</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:36.459" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[3]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.FrameLayout'.</msg>
+<status status="PASS" starttime="20221006 17:37:36.458" endtime="20221006 17:37:36.579"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=android:id/alertTitle</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:36.579" endtime="20221006 17:37:37.263"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:37.265" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]'.</msg>
+<status status="PASS" starttime="20221006 17:37:37.264" endtime="20221006 17:37:38.004"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layoutSubCategory</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:38.004" endtime="20221006 17:37:38.072"/>
+</kw>
+<kw name="Approve" library="Action">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvApprove</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:38.074" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/imvApprove'.</msg>
+<status status="PASS" starttime="20221006 17:37:38.073" endtime="20221006 17:37:39.251"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/transaction_price</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:39.251" endtime="20221006 17:37:39.327"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:38.072" endtime="20221006 17:37:39.327"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:26.790" endtime="20221006 17:37:39.327"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:26.789" endtime="20221006 17:37:39.328"/>
+</test>
+<status status="PASS" starttime="20221006 17:37:26.771" endtime="20221006 17:37:39.329"/>
+</suite>
+<suite id="s1-s3" name="Case03 Expend" source="C:\Users\Neversitup\Desktop\robot\Testcase\Case03_Expend.robot">
+<test id="s1-s3-t1" name="ผู้ใช้งานสร้าง Expense" line="11">
+<kw name="Add Shopping" library="WalletMee">
+<kw name="Add Expense" library="Action">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvAdd</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:39.349" endtime="20221006 17:37:39.425"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvAdd</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:39.427" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/imvAdd'.</msg>
+<status status="PASS" starttime="20221006 17:37:39.425" endtime="20221006 17:37:39.528"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layout</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:39.528" endtime="20221006 17:37:40.060"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layoutExpense</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:40.061" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/layoutExpense'.</msg>
+<status status="PASS" starttime="20221006 17:37:40.060" endtime="20221006 17:37:40.121"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/txtCategory</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:40.121" endtime="20221006 17:37:41.380"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:39.349" endtime="20221006 17:37:41.380"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/key_three</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:41.382" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/key_three'.</msg>
+<status status="PASS" starttime="20221006 17:37:41.381" endtime="20221006 17:37:41.497"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:41.497" endtime="20221006 17:37:42.454"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/key_five</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:42.455" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/key_five'.</msg>
+<status status="PASS" starttime="20221006 17:37:42.454" endtime="20221006 17:37:42.605"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:42.605" endtime="20221006 17:37:43.293"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/key_zero</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:43.295" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/key_zero'.</msg>
+<status status="PASS" starttime="20221006 17:37:43.294" endtime="20221006 17:37:43.394"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:43.394" endtime="20221006 17:37:44.008"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/close_keyboard</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:44.009" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/close_keyboard'.</msg>
+<status status="PASS" starttime="20221006 17:37:44.008" endtime="20221006 17:37:44.130"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edtPrice</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:44.130" endtime="20221006 17:37:45.079"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/txtCategory</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:45.081" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/txtCategory'.</msg>
+<status status="PASS" starttime="20221006 17:37:45.080" endtime="20221006 17:37:45.173"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/gridView</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:45.173" endtime="20221006 17:37:46.280"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ImageView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:46.282" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ImageView'.</msg>
+<status status="PASS" starttime="20221006 17:37:46.280" endtime="20221006 17:37:46.437"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layoutSubCategory</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:46.437" endtime="20221006 17:37:47.349"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.LinearLayout[3]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.FrameLayout</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:47.350" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[3]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.FrameLayout'.</msg>
+<status status="PASS" starttime="20221006 17:37:47.349" endtime="20221006 17:37:47.488"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=android:id/alertTitle</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:47.488" endtime="20221006 17:37:48.154"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:48.155" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]'.</msg>
+<status status="PASS" starttime="20221006 17:37:48.154" endtime="20221006 17:37:48.893"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/layoutSubCategory</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:48.893" endtime="20221006 17:37:48.965"/>
+</kw>
+<kw name="Approve" library="Action">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvApprove</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:48.967" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/imvApprove'.</msg>
+<status status="PASS" starttime="20221006 17:37:48.966" endtime="20221006 17:37:50.139"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/transaction_price</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:50.139" endtime="20221006 17:37:50.210"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:48.966" endtime="20221006 17:37:50.210"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:39.349" endtime="20221006 17:37:50.210"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:39.347" endtime="20221006 17:37:50.210"/>
+</test>
+<status status="PASS" starttime="20221006 17:37:39.330" endtime="20221006 17:37:50.211"/>
+</suite>
+<suite id="s1-s4" name="Case04 Show" source="C:\Users\Neversitup\Desktop\robot\Testcase\Case04_Show.robot">
+<test id="s1-s4-t1" name="ตรวจสอบการแสดงผล" line="11">
+<kw name="Show Graph" library="WalletMee">
+<kw name="View Graph" library="View">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvGraph</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:50.227" endtime="20221006 17:37:50.318"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvGraph</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:50.320" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/imvGraph'.</msg>
+<status status="PASS" starttime="20221006 17:37:50.318" endtime="20221006 17:37:50.409"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/item_layout</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:50.410" endtime="20221006 17:37:51.117"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:50.227" endtime="20221006 17:37:51.117"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:50.227" endtime="20221006 17:37:51.117"/>
+</kw>
+<kw name="Show Transaction" library="WalletMee">
+<kw name="View Transaction" library="View">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvTransaction</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:51.118" endtime="20221006 17:37:51.175"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/imvTransaction</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:51.176" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/imvTransaction'.</msg>
+<status status="PASS" starttime="20221006 17:37:51.175" endtime="20221006 17:37:51.880"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/transactionList</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:51.880" endtime="20221006 17:37:51.968"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:51.117" endtime="20221006 17:37:51.968"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:51.117" endtime="20221006 17:37:51.968"/>
+</kw>
+<kw name="Show Calendar" library="WalletMee">
+<kw name="View Calendar Right" library="View">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnRight</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:51.969" endtime="20221006 17:37:52.047"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnRight</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:52.049" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/btnRight'.</msg>
+<status status="PASS" starttime="20221006 17:37:52.048" endtime="20221006 17:37:52.161"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvCurrentMonth</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:52.161" endtime="20221006 17:37:52.923"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:51.969" endtime="20221006 17:37:52.923"/>
+</kw>
+<kw name="View Calendar Left" library="View">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnLeft</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:52.924" endtime="20221006 17:37:52.992"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnLeft</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:52.993" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/btnLeft'.</msg>
+<status status="PASS" starttime="20221006 17:37:52.992" endtime="20221006 17:37:53.086"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvCurrentMonth</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:53.086" endtime="20221006 17:37:53.814"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:52.923" endtime="20221006 17:37:53.814"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:51.969" endtime="20221006 17:37:53.814"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:50.226" endtime="20221006 17:37:53.814"/>
+</test>
+<status status="PASS" starttime="20221006 17:37:50.212" endtime="20221006 17:37:53.815"/>
+</suite>
+<suite id="s1-s5" name="Case05 Delete" source="C:\Users\Neversitup\Desktop\robot\Testcase\Case05_Delete.robot">
+<test id="s1-s5-t1" name="ลบข้อมูลออกจากระบบ" line="11">
+<kw name="Clear Transaction" library="WalletMee">
+<kw name="Delete Transaction" library="Action">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/transaction_price</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:53.830" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/transaction_price'.</msg>
+<status status="PASS" starttime="20221006 17:37:53.829" endtime="20221006 17:37:53.925"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edit</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:53.925" endtime="20221006 17:37:54.613"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/edit</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:54.614" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/edit'.</msg>
+<status status="PASS" starttime="20221006 17:37:54.613" endtime="20221006 17:37:55.282"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/transaction_remove</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:55.282" endtime="20221006 17:37:55.325"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/transaction_remove</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:55.326" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/transaction_remove'.</msg>
+<status status="PASS" starttime="20221006 17:37:55.325" endtime="20221006 17:37:55.939"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btn_dialog_positive</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:55.939" endtime="20221006 17:37:55.979"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btn_dialog_positive</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:55.980" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/btn_dialog_positive'.</msg>
+<status status="PASS" starttime="20221006 17:37:55.979" endtime="20221006 17:37:56.040"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvAmountRemain</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:56.040" endtime="20221006 17:37:56.972"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:53.829" endtime="20221006 17:37:56.972"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:53.829" endtime="20221006 17:37:56.972"/>
+</kw>
+<kw name="Delete Mee Wallet" library="WalletMee">
+<kw name="Delete Wallet" library="Action">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvDone</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:56.975" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/tvDone'.</msg>
+<status status="PASS" starttime="20221006 17:37:56.973" endtime="20221006 17:37:57.068"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnDeleteWallet</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:57.068" endtime="20221006 17:37:57.749"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btnDeleteWallet</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:57.750" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/btnDeleteWallet'.</msg>
+<status status="PASS" starttime="20221006 17:37:57.749" endtime="20221006 17:37:57.818"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/tvIssue</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221006 17:37:57.818" endtime="20221006 17:37:58.348"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.neversitup.piggipogo:id/btn1</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221006 17:37:58.350" level="INFO">Clicking element 'id=com.neversitup.piggipogo:id/btn1'.</msg>
+<status status="PASS" starttime="20221006 17:37:58.349" endtime="20221006 17:37:58.416"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:56.973" endtime="20221006 17:37:58.416"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:56.973" endtime="20221006 17:37:58.416"/>
+</kw>
+<status status="PASS" starttime="20221006 17:37:53.828" endtime="20221006 17:37:58.416"/>
+</test>
+<status status="PASS" starttime="20221006 17:37:53.816" endtime="20221006 17:37:58.417"/>
+</suite>
+<status status="PASS" starttime="20221006 17:37:00.057" endtime="20221006 17:37:58.418"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Case01 Login">Testcase.Case01 Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Case02 Income">Testcase.Case02 Income</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Case03 Expend">Testcase.Case03 Expend</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Case04 Show">Testcase.Case04 Show</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="Case05 Delete">Testcase.Case05 Delete</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
